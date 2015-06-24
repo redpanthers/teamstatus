@@ -45,3 +45,12 @@ group :development, :test do
   gem 'spring'
 end
 
+group :development do
+  gem 'pry'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'annotate'
+  gem 'quiet_assets'
+  gem 'letter_opener'
+end
+
