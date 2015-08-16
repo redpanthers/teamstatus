@@ -1,4 +1,6 @@
 class EmployeesController < ApplicationController
+  before_action :authorize_admin
+
   def new
     @user = User.new
   end
