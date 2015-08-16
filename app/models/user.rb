@@ -5,4 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   scope :employees, -> { where(is_admin: false) }
+
+  def self.super_user
+    User.where(is_admin: true).first
+  end
 end
