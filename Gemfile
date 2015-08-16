@@ -17,6 +17,8 @@ gem "twitter-bootstrap-rails"
 
 gem 'haml'
 
+gem 'devise'
+
 group :development, :test do
   gem 'byebug'
 
