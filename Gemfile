@@ -18,6 +18,7 @@ gem "twitter-bootstrap-rails"
 gem 'haml'
 
 gem 'devise'
+gem 'whenever', :require => false
 
 group :development, :test do
   gem 'byebug'
