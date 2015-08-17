@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.1.5'
 
 gem 'rails', '4.2.1'
 
@@ -17,12 +17,17 @@ gem "twitter-bootstrap-rails"
 
 gem 'haml'
 
+gem 'devise'
+gem 'whenever', :require => false
+
 group :development, :test do
   gem 'byebug'
 
   gem 'web-console', '~> 2.0'
 
   gem 'spring'
+
+  gem 'minitest-rails'
 end
 
 group :development do
