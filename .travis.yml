@@ -1,0 +1,9 @@
+language: ruby
+env:
+  - DB=postgresql
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rake
+before_script:
+  - psql -c 'create database paymail_test' -U postgres
